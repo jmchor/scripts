@@ -12,20 +12,20 @@ echo '# This repo was created with a shell script' >> README.md
 pnpm init # Create a package.json file
 
 echo '{
-  "name": "pnpm-tsup-test",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+	"name": "pnpm-tsup-test",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+	"test": "echo \"Error: no test specified\" && exit 1",
 		"build": "tsup src/*.ts",
 		"start": "npm run build"
-  },
-  "keywords": [],
-  "author": "Johannes Chorzempa",
-  "license": "ISC",
-  "devDependencies": {
-    "@babel/core": "^7.20.5",
+	},
+	"keywords": [],
+	"author": "Johannes Chorzempa",
+	"license": "ISC",
+	"devDependencies": {
+		"@babel/core": "^7.20.5",
 		"@babel/eslint-parser": "^7.19.1",
 		"@babel/preset-react": "^7.18.6",
 		"@types/node": "^18.11.9",
@@ -48,11 +48,11 @@ echo '{
 		"prettier-plugin-packagejson": "^2.4.2",
 		"tsup": "^6.6.3",
 		"typescript": "^4.9.5"
-  }
+	}
 }
 
 
-' >package.json
+' > package.json
 
 
 pnpm i
@@ -70,7 +70,7 @@ echo '{
 		"target": "es2016",
 		"module": "commonjs",
 		"rootDir": "./src",
-	    "outDir": "./dist",
+		"outDir": "./dist",
 		"esModuleInterop": true,
 		"forceConsistentCasingInFileNames": true ,
         "strict": true,
@@ -83,16 +83,15 @@ echo '{
 
 ' > tsconfig.json
 
-
-
+## add folder structure
 
 mkdir src
 touch src/index.ts
 
 mkdir dist
 
+## create & populate -gitignore, .eslintrc, .prettierrc
 touch .gitignore
-
 echo 'node_modules
 dist
 ' > .gitignore
