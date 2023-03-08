@@ -22,3 +22,8 @@
 - TypeScript, tsup, and so on and so on
 
 Feel free to modify the script, since right now it is custom-made for me!
+
+#### Populate any project with an ESlint and Prettier configuration
+
+- basically the same .eslintrc and .prettierrc configurations
+- can be installed on top of any new or existing project
