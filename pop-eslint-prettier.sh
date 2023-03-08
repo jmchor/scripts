@@ -1,7 +1,7 @@
 #!/bin/bash
 npm install eslint @babel/core @babel/eslint-parser --save-dev
 npm install eslint-config-wesbos
-npm install prettier
+npm install --save-dev prettier
 
 touch .gitignore
 
