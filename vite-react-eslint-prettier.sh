@@ -16,8 +16,8 @@ code --install-extension esbenp.prettier-vscode
 # import eslint from vite-plugin-eslint in vite.config.js
 echo "import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-import eslintPlugin from 'vite-plugin-eslint';
+import eslint from 'vite-plugin-eslint';
 
 export default defineConfig({
-  plugins: [react(), eslintPlugin()],
+  plugins: [react(), eslint()],
 });" > vite.config.js
