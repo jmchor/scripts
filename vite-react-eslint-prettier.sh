@@ -7,7 +7,7 @@ npm install --save-dev eslint eslint-config-react-app vite-plugin-eslint
 npx eslint --init
 
 # install prettier package and prettier extension for vscode
-npm install --save-dev prettier
+npm install prettier
 code --install-extension esbenp.prettier-vscode
 
 # import eslint from vite-plugin-eslint in vite.config.js
