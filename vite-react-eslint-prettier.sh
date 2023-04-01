@@ -4,10 +4,13 @@
 npm install --save-dev eslint eslint-config-react-app vite-plugin-eslint
 
 # initialize eslint configuration
-npx eslint --init
+npm eslint init
+
+# create .eslintrc file that extends react-app
+echo '{"extends": "react-app"}' > .eslintrc
 
 # install prettier package and prettier extension for vscode
-npm install prettier
+npm install --save-dev prettier
 code --install-extension esbenp.prettier-vscode
 
 # import eslint from vite-plugin-eslint in vite.config.js
@@ -16,5 +19,5 @@ import react from '@vitejs/plugin-react';
 import eslintPlugin from 'vite-plugin-eslint';
 
 export default defineConfig({
-    plugins: [react(), eslintPlugin()],
+  plugins: [react(), eslintPlugin()],
 });" > vite.config.js
